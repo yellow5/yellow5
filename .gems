@@ -1,2 +1,0 @@
-sinatra --version '>= 0.9.6'
-haml --version '>= 2.2.20'
