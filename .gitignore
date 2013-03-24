@@ -1,6 +1,5 @@
 .rvmrc
 *.swp
-*.css
 *.beam
 ebin
 deps
