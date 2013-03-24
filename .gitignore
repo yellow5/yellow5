@@ -1,4 +1,5 @@
 .rvmrc
 *.swp
 *.css
+*.beam
 deps
