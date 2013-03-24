@@ -1,0 +1,12 @@
+{application, yellow5,
+ [
+  {description, "yellow5 powerd by Erlang + Cowboy"},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { yellow5_app, []}},
+  {env, []}
+ ]}.
