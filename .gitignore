@@ -1,4 +1,6 @@
 .rvmrc
+.ruby-gemset
+.ruby-version
 *.swp
 *.beam
 ebin
