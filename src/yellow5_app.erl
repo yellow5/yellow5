@@ -23,7 +23,12 @@ start(_StartType, _StartArgs) ->
       ]}
     ]}
   ]),
-  {ok, _} = cowboy:start_http(http, 100, [{port, 8080}], [
+  EnvPort = os:getenv("PORT"),
+  Port = case EnvPort of
+    false -> 8080;
+    _ -> list_to_integer(EnvPort)
+  end,
+  {ok, _} = cowboy:start_http(http, 100, [{port, Port}], [
     {env, [{dispatch, Dispatch}]}
   ]),
   yellow5_sup:start_link().
