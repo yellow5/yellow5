@@ -1,1 +1,1 @@
-web: erl -pa ebin deps/*/ebin -noshell -s yellow5
+web: rackup -s puma -E production
