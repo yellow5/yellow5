@@ -231,6 +231,10 @@ module Web
     configure :development do
       # Don't handle exceptions, render the stack trace
       handle_exceptions false
+
+      assets do
+        compile false
+      end
     end
 
     ##
