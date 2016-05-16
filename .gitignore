@@ -5,3 +5,4 @@
 *.beam
 ebin
 deps
+tmp
