@@ -1,1 +1,1 @@
-web: rackup -s puma -E production -p $PORT
+web: hanami server --server puma --port $PORT
