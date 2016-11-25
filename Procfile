@@ -1,1 +1,1 @@
-web: hanami server --server puma --port $PORT
+web: MIX_ENV=prod mix phoenix.server
