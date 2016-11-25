@@ -13,8 +13,7 @@ use Mix.Config
 # which you typically run after static files are built.
 config :yellow5, Yellow5.Endpoint,
   http: [port: {:system, "PORT"}],
-  url: [scheme: "https", host: "yellow5.herokuapp.com", port: 443],
-  force_ssl: [rewrite_on: [:x_forwarded_proto]],
+  url: [scheme: "http", host: "yellow5.codingpl.us", port: 80],
   cache_static_manifest: "priv/static/manifest.json",
   secret_key_base: System.get_env("SECRET_KEY_BASE")
 
