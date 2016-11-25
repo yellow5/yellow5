@@ -57,6 +57,13 @@ config :logger, level: :info
 #     config :yellow5, Yellow5.Endpoint, server: true
 #
 
+# Configure your database
+config :yellow5, Yellow5.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  url: System.get_env("DATABASE_URL"),
+  pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
+  ssl: true
+
 # Finally import the config/prod.secret.exs
 # which should be versioned separately.
-import_config "prod.secret.exs"
+#import_config "prod.secret.exs"
